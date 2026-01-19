@@ -1,7 +1,5 @@
 {
   "name": "PUMPINGFOIL",
   "description": "The ultimate resource for pumping hydrofoil enthusiasts. Best foils, boards, tutorials, and spots.",
-  "requestFramePermissions": [
-    "geolocation"
-  ]
+  "requestFramePermissions": []
 }
