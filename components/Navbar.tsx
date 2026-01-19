@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
                   <path d="M8 21c3-1 5-1 8 0" />
                 </svg>
             </div>
-            <span className="text-2xl font-black text-white tracking-tighter uppercase">PUMPINGFOIL</span>
+            <span className="text-2xl font-black text-white tracking-tighter uppercase">PUMPING FOIL .com</span>
           </div>
           
           <div className="hidden md:block">

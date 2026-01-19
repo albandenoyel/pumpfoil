@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
         <div className="max-w-5xl">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-10 leading-[0.9] tracking-tighter uppercase drop-shadow-2xl max-w-4xl">
-            Get started with <br className="hidden md:block" /> <span className="text-cyan-400">Pumping Foil</span>
+            Get started with <br className="hidden md:block" /> <span className="text-cyan-400">foil pumping</span>
           </h1>
           
           <div className="max-w-3xl mb-12">
