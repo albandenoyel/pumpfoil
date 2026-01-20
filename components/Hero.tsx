@@ -41,10 +41,9 @@ const Hero: React.FC = () => {
               onClick={() => setShowVideo(true)}
               className="px-10 py-5 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-black rounded-2xl border border-white/20 transition-all text-center uppercase tracking-widest text-xs flex items-center justify-center gap-3 w-full sm:w-auto group"
             >
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
-              </span>
+              <svg className="w-5 h-5 text-cyan-400 fill-current group-hover:scale-125 transition-transform" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
               See it in action
             </button>
           </div>
