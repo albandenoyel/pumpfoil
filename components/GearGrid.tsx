@@ -3,16 +3,22 @@ import { GearItem } from '../types';
 
 interface GearGridProps {
   title: string;
+  subtitle?: string;
   items: GearItem[];
   id: string;
 }
 
-const GearGrid: React.FC<GearGridProps> = ({ title, items, id }) => {
+const GearGrid: React.FC<GearGridProps> = ({ title, subtitle, items, id }) => {
   return (
     <section id={id} className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="mb-12">
           <h2 className="text-4xl font-black text-slate-900 mb-4 uppercase tracking-tighter">{title}</h2>
+          {subtitle && (
+            <p className="text-lg text-slate-600 mb-6 max-w-3xl leading-relaxed font-medium">
+              {subtitle}
+            </p>
+          )}
           <div className="h-1.5 w-20 bg-cyan-500 rounded-full"></div>
         </div>
 

@@ -1,3 +1,4 @@
+
 import { GearItem, Tutorial } from './types';
 
 export const FOILS: GearItem[] = [
@@ -163,6 +164,16 @@ export const BOARDS: GearItem[] = [
     features: [],
     link: 'https://www.alpinefoil.com/kitefoil-windfoil-shop/kitefoil-foilboard-board/pocket-pro-carbone-88-x-43.html',
     price: '999€'
+  },
+  {
+    id: 'b-diy',
+    brand: 'DIY',
+    name: 'Build your own',
+    image: 'https://i.imgur.com/yiM6Do2.jpeg',
+    description: '',
+    features: [],
+    link: 'https://www.google.com/search?sca_esv=59623aa993e8ccae&rlz=1C5CHFA_enUS837US837&q=how+to+build+your+own+pump+foil+board&source=lnms&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpV6Bbbmx4QVaoKkiRQ2jlwvCHF0Eqz8cUq4JjDCZnrJEJPua1MxnlJWIzg-ca3uHt-rsENpXP6feOiGdGgd5eON9njh3FqyLE0U88i3avi6OYmBUpmUvhQ2rNf11RJ4sFE1IvJi3vdO8a276M_S1OiNhYm_wDpLCuqD3CYnZAvLx7cS-Ugm3lPgTICsp29MZZKRmkUw&sa=X&ved=2ahUKEwihos7V2ZqSAxUTdqQEHQ9rBmwQ0pQJegQIDBAB&biw=1679&bih=831&dpr=2&aic=0',
+    price: '20€'
   }
 ];
 
