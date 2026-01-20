@@ -32,6 +32,16 @@ export const FOILS: GearItem[] = [
     price: '999€'
   },
   {
+    id: 'f-indiana-condor',
+    brand: 'Indiana',
+    name: 'Indiana Pump Foil Condor XL',
+    image: 'https://indiana-paddlesurf.com/media/catalog/product/cache/1ac056c1760bf9e921eeaadebe38cf6c/3/6/3615sq_indiana_pump_foil_condor_xl_complete_1300.png',
+    description: '',
+    features: [],
+    link: 'https://indiana-paddlesurf.com/en_eu/3615sq-3615sq.html',
+    price: '1,749€'
+  },
+  {
     id: 'f-alpine',
     brand: 'Alpine',
     name: 'Alpine Foil MODULAR ALU',
@@ -93,6 +103,16 @@ export const BOARDS: GearItem[] = [
     features: [],
     link: 'https://takoon.com/products/pump-carbon-80',
     price: '399€'
+  },
+  {
+    id: 'b-indiana-magic',
+    brand: 'Indiana',
+    name: 'Indiana 83 Pump Foil Magic HD',
+    image: 'https://indiana-paddlesurf.com/media/catalog/product/cache/1ac056c1760bf9e921eeaadebe38cf6c/3/2/3287sr_indiana_pump_foil_83_magic_hd.png',
+    description: '',
+    features: [],
+    link: 'https://indiana-paddlesurf.com/en_eu/indiana-83-pump-foil-magic-hd-3287sr.html',
+    price: '909€'
   },
   {
     id: 'b-gong-kluber',
