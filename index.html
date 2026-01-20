@@ -52,15 +52,23 @@
 
     // --- DATA ---
     const FOILS = [
-      { id: 'f1', brand: 'Takoon', name: 'Pump', image: 'https://takoon.com/cdn/shop/files/Pump_2_b83406bd-06ff-4063-ad94-e8ff949ff7b4_1200x.png?v=1716589858', description: 'A high-performance pumping foil designed for maximum lift and sustained flight with minimal effort.', features: ['High Lift', 'Low Stall Speed', 'Carbon Finish'], link: 'https://takoon.com/products/foil-pump', price: '789€' },
-      { id: 'f2', brand: 'GONG', name: 'Trail V3', image: 'https://www.gong-galaxy.com/cdn/shop/files/00-25-1500-FOIL-PERF_SERIES-TRAIL-GONGFOIL-TB_1.png?v=1738146721&width=1062', description: 'The Trail V3 pack is the ultimate value-for-money setup to get into the world of dock starting and pumping.', features: ['Perf Series', 'Stable', 'Ready to Fly'], link: 'https://www.gong-galaxy.com/products/pack-setup-pumping-trail-v3', price: '639€' },
-      { id: 'f3', brand: 'Sroka', name: 'S-Foil 2000 HA', image: 'https://srokacompany.com/wp-content/uploads/2023/03/2000HA.png', description: 'The 2000 HA (High Aspect) wing is a glide monster. Perfect for heavy riders or those seeking infinite flight.', features: ['2000cm²', 'High Aspect', 'Glide King'], link: 'https://srokacompany.com/produit/foil-pumping-2000-ha/', price: '999€' }
+      { id: 'f-takoon', brand: 'Takoon', name: 'Takoon Pump', image: 'https://takoon.com/cdn/shop/files/Pump_2_b83406bd-06ff-4063-ad94-e8ff949ff7b4_1200x.png?v=1716589858', link: 'https://takoon.com/collections/pump-foil/products/foil-pump', price: '789€' },
+      { id: 'f-gong', brand: 'Gong', name: 'Gong Foil Trail V3', image: 'https://www.gong-galaxy.com/cdn/shop/files/00-25-1500-FOIL-PERF_SERIES-TRAIL-GONGFOIL-TB_1.png?v=1738146721&width=1062', link: 'https://www.gong-galaxy.com/products/pack-setup-pumping-trail-v3', price: '639€' },
+      { id: 'f-sroka', brand: 'Sroka', name: 'Sroka S-Foil High Aspect', image: 'https://srokacompany.com/wp-content/uploads/2023/03/2000HA.png', link: 'https://srokacompany.com/produit/foil-pumping-2000-ha/', price: '999€' },
+      { id: 'f-alpine', brand: 'Alpine', name: 'Alpine Foil MODULAR ALU', image: 'https://www.alpinefoil.com/medias/images/alpinefoil-modular-alu-carbone-hm-0670.jpg?v=1', link: 'https://www.alpinefoil.com/kitefoil-windfoil-shop/pumping-dockstart/pumpfoil/pumpfoil-dockstart-modular-alu.html', price: '1,474€' },
+      { id: 'f-ketos', brand: 'Ketos', name: 'Ketos Pump winter', image: 'https://www.ketos-foil.com/wp-content/uploads/2025/11/Pack-winter--scaled.png', link: 'https://www.ketos-foil.com/en/pumping-packs/pack-pump-winter-ketos-carbon/', price: '1,999€' },
+      { id: 'f-afs', brand: 'AFS', name: 'AFS Enduro GLT', image: 'https://afs-foiling.com/fr/wp-content/uploads/2024/10/Enduro1300_CF_UHM85_0006-1.png.webp', link: 'https://afs-foiling.com/fr/produit/foil-complet-enduro-glt/', price: '2,066€' }
     ];
 
     const BOARDS = [
-      { id: 'b2', brand: 'Takoon', name: 'Pump Wood 80', image: 'https://takoon.com/cdn/shop/files/Big_b8390586-9fba-4c9e-b834-542b3198ef6f_1200x.png?v=1750927502', description: 'Natural Paulownia wood finish. Beautiful aesthetics combined with professional pumping performance.', features: ['Wood Core', 'Responsive', 'Durable'], link: 'https://takoon.com/products/pump-wood-80', price: '280€' },
-      { id: 'b3', brand: 'Takoon', name: 'Pump Carbon 80', image: 'https://takoon.com/cdn/shop/files/Pocket-80-V4---Image-03_42e78c3a-85ea-4ac7-8b94-7d0b716b7dba_1200x.png?v=1750840294', description: 'Full carbon sandwich construction. The peak of lightweight efficiency for long duration flights.', features: ['Full Carbon', 'Lightweight', 'Elite Tech'], link: 'https://takoon.com/products/pump-carbon-80', price: '399€' },
-      { id: 'b4', brand: 'GONG', name: 'Kluber 80', image: 'https://www.gong-galaxy.com/cdn/shop/files/1500-25-PUMPING-KLUBER-80-HDCC-GONGPUMPING-01_95140c49-65a5-4685-a7db-89447ed2d241.png?v=1755677256&width=1062', description: 'Short and ultra-maneuverable. Designed specifically for technical dock starts and tight turns.', features: ['HDCC Tech', '80cm Compact', 'Pro Shape'], link: 'https://www.gong-galaxy.com/en/products/gong-kluber-hdcc-pump-foil-board', price: '399€' }
+      { id: 'b-tools', brand: 'Tools', name: 'Tools Dockstart', image: 'https://tools-surfboards.com/cdn/shop/files/Photoroom_20250327_102245.jpg?v=1743074423&width=1426', link: 'https://tools-surfboards.com/products/dockstart', price: '164€' },
+      { id: 'b-takoon-wood', brand: 'Takoon', name: 'Takoon Pump wood', image: 'https://takoon.com/cdn/shop/files/Big_b8390586-9fba-4c9e-b834-542b3198ef6f_1200x.png?v=1750927502', link: 'https://takoon.com/products/pump-wood-80', price: '238€' },
+      { id: 'b-takoon-carbon', brand: 'Takoon', name: 'Takoon Pump Carbon', image: 'https://takoon.com/cdn/shop/files/Pocket-80-V4---Image-03_42e78c3a-85ea-4ac7-8b94-7d0b716b7dba_1200x.png?v=1750840294', link: 'https://takoon.com/products/pump-carbon-80', price: '399€' },
+      { id: 'b-gong-kluber', brand: 'Gong', name: 'Gong Kluber', image: 'https://www.gong-galaxy.com/cdn/shop/files/1500-25-PUMPING-KLUBER-80-HDCC-GONGPUMPING-01_95140c49-65a5-4685-a7db-89447ed2d241.png?v=1755677256&width=1062', link: 'https://www.gong-galaxy.com/products/gong-kluber-hdcc-pump-foil-board', price: '399€' },
+      { id: 'b-sroka', brand: 'Sroka', name: 'Sroka Pump board', image: 'https://srokacompany.com/wp-content/uploads/2025/09/pb85-1-scaled.png', link: 'https://srokacompany.com/produit/pump-board-85/', price: '430€' },
+      { id: 'b-afs', brand: 'AFS', name: 'AFS Dock-star', image: 'https://afs-foiling.com/fr/wp-content/uploads/2025/05/dock-star_Plan-de-travail-1.png.webp', link: 'https://afs-foiling.com/fr/produit/dock-star/', price: '739€' },
+      { id: 'b-ketos', brand: 'Ketos', name: 'Ketos Pump Evo 90', image: 'https://www.ketos-foil.com/wp-content/uploads/2024/09/Photoroom_20250212_112603.jpg', link: 'https://www.ketos-foil.com/en/pumping-board/board-pumping-evo-90/', price: '800€' },
+      { id: 'b-alpine', brand: 'Alpine', name: 'Alpine Pocket pro carbon', image: 'https://www.alpinefoil.com/medias/images/pocketpump88x43.jpg?v=1', link: 'https://www.alpinefoil.com/kitefoil-windfoil-shop/kitefoil-foilboard-board/pocket-pro-carbone-88-x-43.html', price: '999€' }
     ];
 
     const TUTORIALS = [
@@ -96,10 +104,8 @@
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center">
               <div className="flex-shrink-0 flex items-center gap-2">
-                <div className="w-10 h-10 bg-cyan-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20">
-                  <svg className="w-7 h-7 text-blue-950" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 3v14" /><path d="M4 17c4-2 12-2 16 0" /><path d="M8 21c3-1 5-1 8 0" />
-                  </svg>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20 overflow-hidden">
+                  <img src="logo.png" alt="Pumping Foil Logo" className="w-full h-full object-cover" />
                 </div>
                 <span className="text-2xl font-black text-white tracking-tighter uppercase">PUMPING FOIL</span>
               </div>
@@ -168,23 +174,23 @@
     const GearGrid = ({ title, items, id }) => (
       <section id={id} className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="mb-16">
-            <h2 className="text-5xl font-black text-slate-900 mb-4 uppercase tracking-tighter">{title}</h2>
-            <div className="h-2 w-32 bg-cyan-500 rounded-full"></div>
+          <div className="mb-12">
+            <h2 className="text-4xl font-black text-slate-900 mb-4 uppercase tracking-tighter">{title}</h2>
+            <div className="h-1.5 w-20 bg-cyan-500 rounded-full"></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
             {items.map((item) => (
-              <div key={item.id} className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col h-full hover:-translate-y-2">
-                <div className="relative aspect-[4/5] overflow-hidden bg-white p-6">
-                  <img src={item.image} alt={item.name} className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute top-4 left-4 flex flex-col gap-2">
-                    <span className="bg-slate-900/95 text-cyan-400 px-4 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-widest">{item.brand}</span>
-                    <span className="bg-cyan-500 text-blue-950 px-3 py-1 rounded-lg text-[11px] font-black uppercase">{item.price}</span>
+              <div key={item.id} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full hover:-translate-y-1">
+                <div className="relative aspect-square overflow-hidden bg-white p-4 flex items-center justify-center">
+                  <img src={item.image} alt={item.name} className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute top-3 left-3 flex flex-col gap-1.5">
+                    <span className="bg-slate-900/90 text-cyan-400 px-2.5 py-1 rounded-lg text-[9px] font-black uppercase tracking-widest shadow-lg">{item.brand}</span>
+                    <span className="bg-cyan-500 text-blue-950 px-2 py-0.5 rounded-md text-[10px] font-black uppercase tracking-wider shadow-md w-fit">{item.price}</span>
                   </div>
                 </div>
-                <div className="p-8 flex flex-col">
-                  <h3 className="text-xl font-black text-slate-900 mb-8 uppercase text-center leading-tight">{item.name}</h3>
-                  <a href={item.link} target="_blank" className="block w-full text-center py-4 bg-slate-900 text-white text-[11px] font-black rounded-2xl hover:bg-cyan-500 hover:text-blue-950 transition-all uppercase tracking-widest">View Details</a>
+                <div className="p-4 flex flex-col flex-grow text-center">
+                  <h3 className="text-sm font-black text-slate-900 mb-4 uppercase tracking-tight leading-tight line-clamp-2 min-h-[2.5rem] flex items-center justify-center">{item.name}</h3>
+                  <a href={item.link} target="_blank" className="mt-auto block w-full py-2.5 bg-slate-900 text-white text-[9px] font-black rounded-xl hover:bg-cyan-500 hover:text-blue-950 transition-all uppercase tracking-[0.2em] shadow-lg shadow-slate-900/10">View Details</a>
                 </div>
               </div>
             ))}
@@ -272,6 +278,12 @@
     const Footer = () => (
       <footer className="bg-[#001f3f] text-white py-16 text-center">
         <div className="max-w-7xl mx-auto px-4">
+           <div className="flex flex-col items-center gap-6 mb-8">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20 overflow-hidden">
+                <img src="logo.png" alt="Pumping Foil Logo" className="w-full h-full object-cover" />
+              </div>
+              <span className="text-xl font-black tracking-tighter uppercase">PUMPING FOIL</span>
+          </div>
           <p className="text-blue-200/30 text-[10px] font-black uppercase tracking-[0.3em]">© {new Date().getFullYear()} PUMPINGFOIL NETWORK.</p>
         </div>
       </footer>
@@ -282,8 +294,8 @@
         <Navbar />
         <main className="flex-grow">
           <Hero />
-          <GearGrid id="foils" title="Pump Foils" items={FOILS} />
-          <GearGrid id="boards" title="Pump Boards" items={BOARDS} />
+          <GearGrid id="foils" title="Top Foils" items={FOILS} />
+          <GearGrid id="boards" title="Top Boards" items={BOARDS} />
           <TutorialsSection />
           <SpotsSection />
           <ContactSection />

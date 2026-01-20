@@ -18,15 +18,13 @@ const App: React.FC = () => {
         
         <GearGrid 
           id="foils" 
-          title="Pump Foils" 
+          title="Top Foils" 
           items={FOILS} 
         />
-        
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-blue-200 to-transparent"></div>
-        
+
         <GearGrid 
           id="boards" 
-          title="Pump Boards" 
+          title="Top Boards" 
           items={BOARDS} 
         />
         

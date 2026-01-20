@@ -1,18 +1,17 @@
-
 import React from 'react';
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#001f3f] text-white py-16 border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-10">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-cyan-500 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20">
-              <svg className="w-6 h-6 text-blue-950" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 3v14" />
-                <path d="M4 17c4-2 12-2 16 0" />
-                <path d="M8 21c3-1 5-1 8 0" />
-              </svg>
+      <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="flex flex-col items-center gap-10">
+          <div className="flex flex-col items-center gap-4">
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-2xl shadow-cyan-500/20 overflow-hidden">
+               <img 
+                  src="logo.png" 
+                  alt="Pumping Foil Logo" 
+                  className="w-full h-full object-cover"
+                />
             </div>
             <span className="text-2xl font-black tracking-tighter uppercase">PUMPINGFOIL</span>
           </div>

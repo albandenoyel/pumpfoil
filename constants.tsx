@@ -2,67 +2,147 @@ import { GearItem, Tutorial } from './types';
 
 export const FOILS: GearItem[] = [
   {
-    id: 'f1',
+    id: 'f-takoon',
     brand: 'Takoon',
-    name: 'Pump',
+    name: 'Takoon Pump',
     image: 'https://takoon.com/cdn/shop/files/Pump_2_b83406bd-06ff-4063-ad94-e8ff949ff7b4_1200x.png?v=1716589858',
-    description: 'A high-performance pumping foil designed for maximum lift and sustained flight with minimal effort.',
-    features: ['High Lift', 'Low Stall Speed', 'Carbon Finish'],
-    link: 'https://takoon.com/products/foil-pump',
+    description: '',
+    features: [],
+    link: 'https://takoon.com/collections/pump-foil/products/foil-pump',
     price: '789€'
   },
   {
-    id: 'f2',
-    brand: 'GONG',
-    name: 'Trail V3',
+    id: 'f-gong',
+    brand: 'Gong',
+    name: 'Gong Foil Trail V3',
     image: 'https://www.gong-galaxy.com/cdn/shop/files/00-25-1500-FOIL-PERF_SERIES-TRAIL-GONGFOIL-TB_1.png?v=1738146721&width=1062',
-    description: 'The Trail V3 pack is the ultimate value-for-money setup to get into the world of dock starting and pumping.',
-    features: ['Perf Series', 'Stable', 'Ready to Fly'],
+    description: '',
+    features: [],
     link: 'https://www.gong-galaxy.com/products/pack-setup-pumping-trail-v3',
     price: '639€'
   },
   {
-    id: 'f3',
+    id: 'f-sroka',
     brand: 'Sroka',
-    name: 'S-Foil 2000 HA',
+    name: 'Sroka S-Foil High Aspect',
     image: 'https://srokacompany.com/wp-content/uploads/2023/03/2000HA.png',
-    description: 'The 2000 HA (High Aspect) wing is a glide monster. Perfect for heavy riders or those seeking infinite flight.',
-    features: ['2000cm²', 'High Aspect', 'Glide King'],
+    description: '',
+    features: [],
     link: 'https://srokacompany.com/produit/foil-pumping-2000-ha/',
     price: '999€'
+  },
+  {
+    id: 'f-alpine',
+    brand: 'Alpine',
+    name: 'Alpine Foil MODULAR ALU',
+    image: 'https://www.alpinefoil.com/medias/images/alpinefoil-modular-alu-carbone-hm-0670.jpg?v=1',
+    description: '',
+    features: [],
+    link: 'https://www.alpinefoil.com/kitefoil-windfoil-shop/pumping-dockstart/pumpfoil/pumpfoil-dockstart-modular-alu.html',
+    price: '1,474€'
+  },
+  {
+    id: 'f-ketos',
+    brand: 'Ketos',
+    name: 'Ketos Pump winter',
+    image: 'https://www.ketos-foil.com/wp-content/uploads/2025/11/Pack-winter--scaled.png',
+    description: '',
+    features: [],
+    link: 'https://www.ketos-foil.com/en/pumping-packs/pack-pump-winter-ketos-carbon/',
+    price: '1,999€'
+  },
+  {
+    id: 'f-afs',
+    brand: 'AFS',
+    name: 'AFS Enduro GLT',
+    image: 'https://afs-foiling.com/fr/wp-content/uploads/2024/10/Enduro1300_CF_UHM85_0006-1.png.webp',
+    description: '',
+    features: [],
+    link: 'https://afs-foiling.com/fr/produit/foil-complet-enduro-glt/',
+    price: '2,066€'
   }
 ];
 
 export const BOARDS: GearItem[] = [
   {
-    id: 'b2',
-    brand: 'Takoon',
-    name: 'Pump Wood 80',
-    image: 'https://takoon.com/cdn/shop/files/Big_b8390586-9fba-4c9e-b834-542b3198ef6f_1200x.png?v=1750927502',
-    description: 'Natural Paulownia wood finish. Beautiful aesthetics combined with professional pumping performance.',
-    features: ['Wood Core', 'Responsive', 'Durable'],
-    link: 'https://takoon.com/products/pump-wood-80',
-    price: '280€'
+    id: 'b-tools',
+    brand: 'Tools',
+    name: 'Tools Dockstart',
+    image: 'https://tools-surfboards.com/cdn/shop/files/Photoroom_20250327_102245.jpg?v=1743074423&width=1426',
+    description: '',
+    features: [],
+    link: 'https://tools-surfboards.com/products/dockstart',
+    price: '164€'
   },
   {
-    id: 'b3',
+    id: 'b-takoon-wood',
     brand: 'Takoon',
-    name: 'Pump Carbon 80',
+    name: 'Takoon Pump wood',
+    image: 'https://takoon.com/cdn/shop/files/Big_b8390586-9fba-4c9e-b834-542b3198ef6f_1200x.png?v=1750927502',
+    description: '',
+    features: [],
+    link: 'https://takoon.com/products/pump-wood-80',
+    price: '238€'
+  },
+  {
+    id: 'b-takoon-carbon',
+    brand: 'Takoon',
+    name: 'Takoon Pump Carbon',
     image: 'https://takoon.com/cdn/shop/files/Pocket-80-V4---Image-03_42e78c3a-85ea-4ac7-8b94-7d0b716b7dba_1200x.png?v=1750840294',
-    description: 'Full carbon sandwich construction. The peak of lightweight efficiency for long duration flights.',
-    features: ['Full Carbon', 'Lightweight', 'Elite Tech'],
+    description: '',
+    features: [],
     link: 'https://takoon.com/products/pump-carbon-80',
     price: '399€'
   },
   {
-    id: 'b4',
-    brand: 'GONG',
-    name: 'Kluber 80',
+    id: 'b-gong-kluber',
+    brand: 'Gong',
+    name: 'Gong Kluber',
     image: 'https://www.gong-galaxy.com/cdn/shop/files/1500-25-PUMPING-KLUBER-80-HDCC-GONGPUMPING-01_95140c49-65a5-4685-a7db-89447ed2d241.png?v=1755677256&width=1062',
-    description: 'Short and ultra-maneuverable. Designed specifically for technical dock starts and tight turns.',
-    features: ['HDCC Tech', '80cm Compact', 'Pro Shape'],
-    link: 'https://www.gong-galaxy.com/en/products/gong-kluber-hdcc-pump-foil-board',
+    description: '',
+    features: [],
+    link: 'https://www.gong-galaxy.com/products/gong-kluber-hdcc-pump-foil-board',
     price: '399€'
+  },
+  {
+    id: 'b-sroka',
+    brand: 'Sroka',
+    name: 'Sroka Pump board',
+    image: 'https://srokacompany.com/wp-content/uploads/2025/09/pb85-1-scaled.png',
+    description: '',
+    features: [],
+    link: 'https://srokacompany.com/produit/pump-board-85/',
+    price: '430€'
+  },
+  {
+    id: 'b-afs',
+    brand: 'AFS',
+    name: 'AFS Dock-star',
+    image: 'https://afs-foiling.com/fr/wp-content/uploads/2025/05/dock-star_Plan-de-travail-1.png.webp',
+    description: '',
+    features: [],
+    link: 'https://afs-foiling.com/fr/produit/dock-star/',
+    price: '739€'
+  },
+  {
+    id: 'b-ketos',
+    brand: 'Ketos',
+    name: 'Ketos Pump Evo 90',
+    image: 'https://www.ketos-foil.com/wp-content/uploads/2024/09/Photoroom_20250212_112603.jpg',
+    description: '',
+    features: [],
+    link: 'https://www.ketos-foil.com/en/pumping-board/board-pumping-evo-90/',
+    price: '800€'
+  },
+  {
+    id: 'b-alpine',
+    brand: 'Alpine',
+    name: 'Alpine Pocket pro carbon',
+    image: 'https://www.alpinefoil.com/medias/images/pocketpump88x43.jpg?v=1',
+    description: '',
+    features: [],
+    link: 'https://www.alpinefoil.com/kitefoil-windfoil-shop/kitefoil-foilboard-board/pocket-pro-carbone-88-x-43.html',
+    price: '999€'
   }
 ];
 
