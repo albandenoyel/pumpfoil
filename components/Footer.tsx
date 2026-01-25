@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
             </div>
-            <span className="text-2xl font-black tracking-tighter uppercase">Pump foil</span>
+            <span className="text-2xl font-black tracking-tighter uppercase">Pump foil.com</span>
           </div>
           
           <div className="flex gap-10">

@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
             </div>
-            <span className="text-2xl font-black text-white tracking-tighter uppercase">Pump foil</span>
+            <span className="text-2xl font-black text-white tracking-tighter uppercase">Pump foil.com</span>
           </div>
           
           <div className="hidden md:block">

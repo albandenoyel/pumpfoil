@@ -5,18 +5,23 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative pt-40 pb-24 overflow-hidden bg-slate-900 text-white min-h-[90vh] flex items-center">
-      {/* Background Image Layer */}
+      {/* Background Video Layer */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://i.imgur.com/YBYttOq.jpeg" 
-          alt="Pump foil session" 
-          className="w-full h-full object-cover object-center scale-105 animate-[subtle-zoom_20s_infinite_alternate]"
-          loading="eager"
-        />
-        {/* Dynamic cinematic overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/40 to-transparent"></div>
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="https://i.imgur.com/YBYttOq.jpeg"
+          className="w-full h-full object-cover object-center scale-105"
+        >
+          <source src="https://player.vimeo.com/external/517614057.hd.mp4?s=4b136894054a8e0f9b0c7a4d5d4d3c6a4e3b1c2d&profile_id=174" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        {/* Cinematic overlays for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
@@ -75,13 +80,6 @@ const Hero: React.FC = () => {
           </div>
         </div>
       )}
-
-      <style>{`
-        @keyframes subtle-zoom {
-          from { transform: scale(1.0); }
-          to { transform: scale(1.15); }
-        }
-      `}</style>
     </section>
   );
 };
