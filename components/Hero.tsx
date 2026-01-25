@@ -4,22 +4,24 @@ const Hero: React.FC = () => {
   return (
     <section className="relative pt-40 pb-24 overflow-hidden bg-slate-900 text-white min-h-[90vh] flex items-center">
       {/* Background Video Layer */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <video
           autoPlay
           loop
           muted
           playsInline
           poster="https://i.imgur.com/YBYttOq.jpeg"
-          className="w-full h-full object-cover object-center scale-105"
+          className="w-full h-full object-cover object-center scale-[1.12] origin-center"
         >
           <source src="https://player.vimeo.com/external/517614057.hd.mp4?s=4b136894054a8e0f9b0c7a4d5d4d3c6a4e3b1c2d&profile_id=174" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        {/* Cinematic overlays for better text readability */}
+
+        {/* Cinematic overlays for better text readability and hiding watermarks */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/60 to-transparent"></div>
-        <div className="absolute inset-0 bg-black/30"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
+        {/* Aggressive bottom gradient to mask any low-positioned watermarks and transition to next section */}
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
@@ -30,7 +32,7 @@ const Hero: React.FC = () => {
           
           <div className="max-w-3xl mb-12">
             <p className="text-lg md:text-xl text-blue-50 leading-relaxed font-medium drop-shadow-lg">
-              A pump foil is a hydrofoil connected to a board, powered just by your legs, which lets you fly above water. The feeling of glide is absolutely unique. You can practice this magical sport every day of the year, and anywhere there is water. You will find here ressources about the best foils, boards, tutorials and spots to get started with foil pumping.
+              A pump foil is a hydrofoil connected to a board, powered just by your legs, which lets you fly above water. The feeling of glide is absolutely unique. You can practice this magical sport every day of the year, and anywhere there is water. You will find here resources about the best foils, boards, tutorials and spots to get started with foil pumping. This site is a resource to help people find everything they need to get started: gears, spots, tutorials and more
             </p>
           </div>
           

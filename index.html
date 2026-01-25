@@ -158,19 +158,22 @@
     const Hero = () => {
       return (
         <section className="relative pt-40 pb-24 overflow-hidden bg-slate-900 text-white min-h-[90vh] flex items-center">
-          <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 z-0 overflow-hidden">
             <video
               autoPlay
               loop
               muted
               playsInline
-              poster="https://i.imgur.com/JaCfrXU.mp4"
-              className="w-full h-full object-cover object-center scale-105"
+           
+              className="w-full h-full object-cover object-center scale-[1.12] origin-center"
             >
               <source src="https://i.imgur.com/JaCfrXU.mp4" type="video/mp4" />
             </video>
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/40 to-transparent"></div>
-            <div className="absolute inset-0 bg-black/30"></div>
+            {/* Cinematic overlays for better text readability and hiding watermarks */}
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-slate-900/40 to-transparent"></div>
+            <div className="absolute inset-0 bg-black/20"></div>
+
+
           </div>
           <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
             <div className="max-w-5xl">
