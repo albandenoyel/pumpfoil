@@ -192,7 +192,7 @@ export const TUTORIALS: Tutorial[] = [
     title: 'Best way to learn dockstart',
     author: '@yvonvite_AXIS',
     duration: '06:18',
-    thumbnail: 'https://img.youtube.com/vi/WSXoRP9TB3U/hqdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/WSXoRP9TB3U/mqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=WSXoRP9TB3U'
   },
   {
@@ -200,7 +200,7 @@ export const TUTORIALS: Tutorial[] = [
     title: 'How to dock start a hydrofoil',
     author: '@wakethief',
     duration: '08:13',
-    thumbnail: 'https://img.youtube.com/vi/QpjtsrMWv2U/hqdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/QpjtsrMWv2U/mqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=QpjtsrMWv2U'
   },
   {
@@ -208,7 +208,7 @@ export const TUTORIALS: Tutorial[] = [
     title: 'The 6 steps drill for easy dockstart',
     author: '@gaelfoil',
     duration: '12:45',
-    thumbnail: 'https://img.youtube.com/vi/hWIveY2OV-E/hqdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/hWIveY2OV-E/mqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=hWIveY2OV-E'
   },
   {
@@ -216,7 +216,7 @@ export const TUTORIALS: Tutorial[] = [
     title: 'Tuto dockstart / Pumpfoil',
     author: '@arthurfoil',
     duration: '04:30',
-    thumbnail: 'https://img.youtube.com/vi/O9D2zwtnYe0/hqdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/O9D2zwtnYe0/mqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=O9D2zwtnYe0'
   },
   {
@@ -224,7 +224,7 @@ export const TUTORIALS: Tutorial[] = [
     title: 'How to dockstart / pumpfoil',
     author: '@Ludo_freefoiler',
     duration: '15:20',
-    thumbnail: 'https://img.youtube.com/vi/6-dSKiGtGk8/hqdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/6-dSKiGtGk8/mqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=6-dSKiGtGk8'
   },
   {
@@ -232,7 +232,7 @@ export const TUTORIALS: Tutorial[] = [
     title: 'How to dockstart easily',
     author: '@carla-surfskate',
     duration: '03:15',
-    thumbnail: 'https://img.youtube.com/vi/hFKKHqRgdGw/hqdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/hFKKHqRgdGw/mqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=hFKKHqRgdGw'
   },
   {
@@ -240,7 +240,7 @@ export const TUTORIALS: Tutorial[] = [
     title: 'The Secret to Dock Starting',
     author: '@wakethief',
     duration: '10:33',
-    thumbnail: 'https://img.youtube.com/vi/DoIGESRWpN8/hqdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/DoIGESRWpN8/mqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=DoIGESRWpN8'
   },
   {
@@ -248,7 +248,7 @@ export const TUTORIALS: Tutorial[] = [
     title: 'HOW TO PUMP FOIL - TUTO / CONSEILS',
     author: '@HadrienBRUNNER',
     duration: '12:56',
-    thumbnail: 'https://img.youtube.com/vi/QAt2BnYpsWs/hqdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/QAt2BnYpsWs/mqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=QAt2BnYpsWs'
   },
   {
@@ -256,7 +256,7 @@ export const TUTORIALS: Tutorial[] = [
     title: 'LEARN TO DOCKSTART IN 5 MINUTES',
     author: '@Stefoildoc',
     duration: '06:17',
-    thumbnail: 'https://img.youtube.com/vi/fBYG48xN6TI/hqdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/fBYG48xN6TI/mqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=fBYG48xN6TI'
   }
 ];
