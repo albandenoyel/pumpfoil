@@ -188,12 +188,16 @@
         <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#001f3f]/95 backdrop-blur-lg border-b border-blue-900/50 py-4' : 'bg-transparent py-6'}`}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center">
-              <div className="flex-shrink-0 flex items-center gap-2">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20 overflow-hidden">
-                  <img src="logo.png" alt="Pump Foil Logo" className="w-full h-full object-cover" />
+              <a 
+                href="#" 
+                onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                className="flex-shrink-0 flex items-center gap-2 group cursor-pointer"
+              >
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20 overflow-hidden transition-transform group-hover:scale-105">
+                  <img src="logo.png" alt="Pump Foil Logo" className="w-full h-full object-cover"/>
                 </div>
                 <span className="text-2xl font-black text-white tracking-tighter uppercase">Pump foil</span>
-              </div>
+              </a>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-1">
                   {navLinks.map((link) => (
@@ -342,7 +346,7 @@
       <section id="spots" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-black text-[#001f3f] mb-2 uppercase tracking-tighter">Pump foil spots</h2>
-          <p className="text-lg text-slate-500 mb-12 font-medium">The best spots for pump foiling around the world</p>
+          <p className="text-lg text-slate-500 mb-12 font-medium">While you can pump anywhere there is water, you usually need a starting point like a dock or a slipway.<br />Here are some of the best spots for pump foiling around the world, vetted by the community.</p>
           <div className="relative bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-blue-100 min-h-[500px] mt-4">
             <iframe src="https://www.google.com/maps/d/embed?mid=11JFcIB3OIhHayXda8qPC-F1PYzSZE3I&hl" width="100%" height="500" className="border-0"></iframe>
           </div>

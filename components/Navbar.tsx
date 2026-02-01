@@ -25,8 +25,12 @@ const Navbar: React.FC = () => {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#001f3f]/95 backdrop-blur-lg border-b border-blue-900/50 py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <div className="flex-shrink-0 flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20 overflow-hidden">
+          <a 
+            href="#" 
+            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+            className="flex-shrink-0 flex items-center gap-2 group cursor-pointer"
+          >
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20 overflow-hidden transition-transform group-hover:scale-105">
                 <img 
                   src="logo.png" 
                   alt="Pump Foil Logo" 
@@ -34,7 +38,7 @@ const Navbar: React.FC = () => {
                 />
             </div>
             <span className="text-2xl font-black text-white tracking-tighter uppercase">Pump foil.com</span>
-          </div>
+          </a>
           
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-1">
