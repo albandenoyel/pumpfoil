@@ -70,6 +70,7 @@
   }
 }
 </script>
+<link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-slate-50 text-slate-900">
   <div id="root"></div>
@@ -79,7 +80,7 @@
 
     // --- DATA ---
     const FOILS = [
-      { id: 'f-takoon', brand: 'Takoon', name: 'Takoon Pump', image: 'https://takoon.com/cdn/shop/files/Pump_2_b83406bd-06ff-4063-ad94-e8ff949ff7b4_1200x.png?v=1716589858', link: 'https://takoon.com/collections/pump-foil/products/foil-pump', price: '789€' },
+      { id: 'f-takoon', brand: 'Takoon', name: 'Takoon Pump One', image: 'https://takoon.com/cdn/shop/files/Pump_2_b83406bd-06ff-4063-ad94-e8ff949ff7b4_1200x.png?v=1716589858', link: 'https://takoon.com/products/foil-pump-one', price: '615€' },
       { id: 'f-gong', brand: 'Gong', name: 'Gong Foil Trail V3', image: 'https://www.gong-galaxy.com/cdn/shop/files/00-25-1500-FOIL-PERF_SERIES-TRAIL-GONGFOIL-TB_1.png?v=1738146721&width=1062', link: 'https://www.gong-galaxy.com/products/pack-setup-pumping-trail-v3', price: '639€' },
       { id: 'f-sroka', brand: 'Sroka', name: 'Sroka S-Foil High Aspect', image: 'https://srokacompany.com/wp-content/uploads/2023/03/2000HA.png', link: 'https://srokacompany.com/produit/foil-pumping-2000-ha/', price: '999€' },
       { id: 'f-indiana-condor', brand: 'Indiana', name: 'Indiana Pump Foil Condor XL', image: 'https://indiana-paddlesurf.com/media/catalog/product/cache/1ac056c1760bf9e921eeaadebe38cf6c/3/6/3615sq_indiana_pump_foil_condor_xl_complete_1300.png', link: 'https://indiana-paddlesurf.com/en_eu/3615sq-3615sq.html', price: '1,749€' },
@@ -94,7 +95,7 @@
       { id: 'b-takoon-wood', brand: 'Takoon', name: 'Takoon Pump wood', image: 'https://takoon.com/cdn/shop/files/Big_b8390586-9fba-4c9e-b834-542b3198ef6f_1200x.png?v=1750927502', link: 'https://takoon.com/products/pump-wood-80', price: '238€' },
       { id: 'b-takoon-carbon', brand: 'Takoon', name: 'Takoon Pump Carbon', image: 'https://takoon.com/cdn/shop/files/Pocket-80-V4---Image-03_42e78c3a-85ea-4ac7-8b94-7d0b716b7dba_1200x.png?v=1750840294', link: 'https://takoon.com/products/pump-carbon-80', price: '399€' },
       { id: 'b-indiana-magic', brand: 'Indiana', name: 'Indiana 83 Pump Foil Magic HD', image: 'https://indiana-paddlesurf.com/media/catalog/product/cache/1ac056c1760bf9e921eeaadebe38cf6c/3/2/3287sr_indiana_pump_foil_83_magic_hd.png', link: 'https://indiana-paddlesurf.com/en_eu/indiana-83-pump-foil-magic-hd-3287sr.html', price: '909€' },
-      { id: 'b-gong-kluber', brand: 'Gong', name: 'Gong Kluber', image: 'https://www.gong-galaxy.com/cdn/shop/files/1500-25-PUMPING-KLUBER-80-HDCC-GONGPUMPING-01_95140c49-65a5-4685-a7db-89447ed2d241.png?v=1755677256&width=1062', link: 'https://www.gong-galaxy.com/products/gong-kluber-hdcc-pump-foil-board', price: '399€' },
+      { id: 'b-gong-kluber', brand: 'Gong', name: 'Gong Kluber HDC', image: 'https://www.gong-galaxy.com/cdn/shop/files/26-1500-PUMPING-HDC-KLUBER-BLACK-GONGPUMPING-VUE-01_c9b92044-3e56-4f30-9279-57ec374556a5.jpg?v=1772700089&width=1062', link: 'https://www.gong-galaxy.com/products/gong-pump-foil-board-kluber-hdc-fiberglass', price: '359€' },
       { id: 'b-sroka', brand: 'Sroka', name: 'Sroka Pump board', image: 'https://srokacompany.com/wp-content/uploads/2025/09/pb85-1-scaled.png', link: 'https://srokacompany.com/produit/pump-board-85/', price: '430€' },
       { id: 'b-afs', brand: 'AFS', name: 'AFS Dock-star', image: 'https://i.imgur.com/7y6gQeQ.jpeg', link: 'https://afs-foiling.com/fr/produit/dock-star/', price: '739€' },
       { id: 'b-ketos', brand: 'Ketos', name: 'Ketos Skull', image: 'https://www.ketos-foil.com/wp-content/uploads/2025/05/SKULL-80-.png', link: 'https://www.ketos-foil.com/en/pumping-en/board-dockstart-pumping-skull80/', price: '1,299€' },
@@ -131,6 +132,21 @@
           "It provides a unique 'infinite glide' sensation unlike any other sport."
         ]
       },
+            {
+        question: "Who invented pump foiling?",
+        answer: [
+          "Pump foiling was pioneered largely by Laird Hamilton in the early 2000s, who experimented with foiling in various forms.",
+          "The specific discipline of pump foiling as a standalone activity is most closely associated with Kai Lenny, who popularized it around 2018–2019"
+        ]
+      },
+      {
+        question: "How does a pump foil work?",
+        answer: [
+          "The front wing of a pump foil works exactly like airplane wings, using Bernoulli's principle.",
+          "When you pump a foil, you rhythmically shift your weight down and up through your legs, alternately changing the foil's angle of attack. Pressing down pitches the nose downward, accelerating water over the curved wing surface and generating lift and forward thrust; pulling up pitches the nose back, converting that momentum into upward travel.",
+          "Repeated in a smooth dolphin-kick rhythm, this oscillation continuously translates vertical body movement into horizontal forward propulsion - essentially the same mechanism fish and cetaceans use to swim - keeping the board airborne above the water on the submerged foil with no external power source required."
+        ]
+      },
       {
         question: "What does it take to learn pump foiling?",
         answer: [
@@ -159,6 +175,7 @@
           "Energy usage: It is an intense cardio workout that scales with efficiency."
         ]
       }
+
     ];
 
     // --- COMPONENTS ---
@@ -616,5 +633,6 @@
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<App />);
   </script>
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>
