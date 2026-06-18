@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pumpfoil.com/sitemap.xml
