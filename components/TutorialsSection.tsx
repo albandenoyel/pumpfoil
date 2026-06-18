@@ -3,32 +3,13 @@ import { TUTORIALS } from '../constants';
 
 const TutorialsSection: React.FC = () => {
   return (
-    <section id="tutorials" className="py-16 bg-[#001f3f] text-white overflow-hidden relative">
-      <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent opacity-5"></div>
-      
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-8">
-          <div className="max-w-xl">
-            <h2 className="text-4xl md:text-6xl font-black mb-6 uppercase tracking-tighter">The pump foil school</h2>
-            <p className="text-blue-200/60 text-lg leading-relaxed font-medium">
-              Mastering dockstart and sustained pumping takes resilience. These tutorials will guide you from first splash to first minute
-            </p>
-          </div>
-          <div className="hidden lg:block">
-            <div className="flex -space-x-4">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="w-14 h-14 rounded-full border-4 border-[#001f3f] bg-slate-800 overflow-hidden shadow-xl">
-                  <img src={`https://i.pravatar.cc/150?u=${i}`} alt="user" className="w-full h-full object-cover" />
-                </div>
-              ))}
-              <div className="w-14 h-14 rounded-full border-4 border-[#001f3f] bg-cyan-500 flex items-center justify-center text-blue-950 font-black text-xs">
-                +2k
-              </div>
-            </div>
-            <p className="text-[10px] text-blue-300 font-bold uppercase tracking-widest mt-2 text-center">Community Pilots</p>
-          </div>
+    <section id="tutorials" className="py-16 bg-[#001f3f] text-white">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="mb-12 text-center md:text-left">
+          <h2 className="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tighter">The pump foil school</h2>
+          <p className="text-blue-200/60 text-lg mb-6 max-w-3xl font-medium">Mastering dockstart and sustained pumping takes resilience. These tutorials will guide you from first splash to first minute</p>
+          <div className="h-1.5 w-20 bg-cyan-500 rounded-full mx-auto md:mx-0"></div>
         </div>
-
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
           {TUTORIALS.map((tut) => (
             <a 
@@ -66,21 +47,6 @@ const TutorialsSection: React.FC = () => {
               </div>
             </a>
           ))}
-        </div>
-        
-        <div className="mt-20 bg-gradient-to-br from-cyan-600 to-blue-900 rounded-[3rem] p-10 md:p-20 text-white shadow-2xl relative overflow-hidden group">
-          <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-white/10 rounded-full blur-3xl -mr-[20rem] -mt-[20rem] group-hover:bg-cyan-400/20 transition-all duration-1000"></div>
-          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
-            <div className="max-w-2xl text-center lg:text-left">
-              <span className="text-cyan-200 text-xs font-black uppercase tracking-[0.3em] mb-4 block">Weekly Transmission</span>
-              <h4 className="text-4xl md:text-5xl font-black mb-6 uppercase tracking-tighter leading-none">Stay in the <br /> <span className="text-cyan-300">Infinite Flight</span></h4>
-              <p className="text-blue-50 text-xl opacity-90 leading-relaxed font-light">Join the hub to receive the latest foil releases, spot openings, and secret tech tips from professional pumpers.</p>
-            </div>
-            <div className="flex flex-col sm:flex-row w-full lg:w-auto gap-4">
-              <input type="email" placeholder="YOUR EMAIL ADDRESS" className="bg-[#001f3f]/40 backdrop-blur-lg border border-white/20 rounded-2xl px-8 py-6 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-400 w-full lg:w-96 font-bold uppercase tracking-widest text-xs" />
-              <button className="bg-white text-blue-950 px-12 py-6 rounded-2xl font-black hover:bg-cyan-400 hover:text-blue-950 transition-all uppercase tracking-widest text-xs shadow-2xl">Connect</button>
-            </div>
-          </div>
         </div>
       </div>
     </section>

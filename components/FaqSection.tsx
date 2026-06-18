@@ -9,19 +9,33 @@ const FAQ_DATA: FaqItem[] = [
   {
     question: "What is a pump foil?",
     answer: [
-      "A hydrofoil connected to a compact, rigid board.",
-      "Powered entirely by leg movements (pumping) to create lift.",
-      "Allows for flight above water without the need for waves or wind.",
-      "Provides a unique 'infinite glide' sensation unlike any other board sport."
+      "A pump foil is a hydrofoil connected to a board, powered entirely by leg movements (pumping) to create lift.",
+      "It allows for flight above water without the need for waves or wind.",
+      "It provides a unique 'infinite glide' sensation unlike any other sport."
+    ]
+  },
+  {
+    question: "Who invented pump foiling?",
+    answer: [
+      "Pump foiling was pioneered largely by Laird Hamilton in the early 2000s, who experimented with foiling in various forms.",
+      "The specific discipline of pump foiling as a standalone activity is most closely associated with Kai Lenny, who popularized it around 2018–2019"
+    ]
+  },
+  {
+    question: "How does a pump foil work?",
+    answer: [
+      "The front wing of a pump foil works exactly like airplane wings, using Bernoulli's principle.",
+      "When you pump a foil, you rhythmically shift your weight down and up through your legs, alternately changing the foil's angle of attack. Pressing down pitches the nose downward, accelerating water over the curved wing surface and generating lift and forward thrust; pulling up pitches the nose back, converting that momentum into upward travel.",
+      "Repeated in a dolphin-kick rhythm, this oscillation continuously translates vertical body movement into horizontal forward propulsion - essentially the same mechanism fish and cetaceans use to swim - keeping the board airborne above the water on the submerged foil with no external power source required."
     ]
   },
   {
     question: "What does it take to learn pump foiling?",
     answer: [
       "High resilience: Consistency is more important than raw strength.",
-      "Weekly practice: Aim for at least one session per week to maintain muscle memory.",
-      "Learning curve: Typically takes 5-10 sessions of 1-2 hours to reach consistent flight.",
-      "Community: Practicing with others or filming yourself is the fastest way to improve."
+      "Weekly practice: Once you start, aim for at least one session per week to maintain muscle memory.",
+      "Learning curve: Typically takes 5-10 sessions of 1-2 hours to reach consistent takeoff.",
+      "Community: Practicing with others is the best way to improve."
     ]
   },
   {
@@ -29,9 +43,10 @@ const FAQ_DATA: FaqItem[] = [
     answer: [
       "Dockstart: Running on a dock and jumping onto the board (most common).",
       "Dropstart: Jumping from a height (60-100cm) onto a foil held above water.",
-      "Deadstart: Starting from a standstill in deep water (advanced).",
+      "Deadstart: Starting from a standstill with the foil in water (advanced).",
+      "Launcher start: Putting the foil on an inflatable launcher and jumping on it (beginner).",
       "Beachstart: Running from the shore into the water (hardest).",
-      "Flat start: Starting from a flat surface or a larger board like a SUP."
+      "Ladder start: Using a ladder on the shore to jump into flight."
     ]
   },
   {
@@ -57,7 +72,7 @@ const FaqSection: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
           <span className="text-cyan-600 font-black uppercase tracking-[0.3em] text-xs mb-4 block">Knowledge Base</span>
-          <h2 className="text-4xl md:text-5xl font-black text-[#001f3f] mb-4 uppercase tracking-tighter">Everything you need to know</h2>
+          <h2 className="text-4xl md:text-5xl font-black text-[#001f3f] mb-4 uppercase tracking-tighter">Frequently Asked Questions</h2>
           <div className="h-1.5 w-20 bg-cyan-500 rounded-full mx-auto"></div>
         </div>
 

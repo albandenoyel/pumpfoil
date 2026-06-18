@@ -1,5 +1,8 @@
 {
   "name": "Pump foil",
   "description": "The ultimate guide to pump foiling. Explore top hydrofoils, dockstart boards, expert tutorials, and a global spot map. Start your infinite flight today!",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

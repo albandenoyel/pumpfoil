@@ -4,8 +4,8 @@ export interface GearItem {
   name: string;
   brand: string;
   image: string;
-  description: string;
-  features: string[];
+  description?: string;
+  features?: string[];
   link: string;
   price?: string;
 }
